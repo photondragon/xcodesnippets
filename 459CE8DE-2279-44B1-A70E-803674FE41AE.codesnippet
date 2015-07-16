@@ -9,8 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#ClassName#&gt;* sself = wself;
-</string>
+	<string>__typeof(self) strongself = weakself;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>459CE8DE-2279-44B1-A70E-803674FE41AE</string>
 	<key>IDECodeSnippetLanguage</key>
