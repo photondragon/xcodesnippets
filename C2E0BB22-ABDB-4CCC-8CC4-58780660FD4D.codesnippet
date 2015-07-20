@@ -3,25 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ibaction</string>
+	<string>dispatchmain</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (IBAction)&lt;#action#&gt;:(id)sender
-{
-    &lt;#your code#&gt;
-}</string>
+	<string>dispatch_async(dispatch_get_main_queue(), &lt;#^(void)block#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8B0AD6EB-F902-4B73-A68D-78492C9CF00F</string>
+	<string>C2E0BB22-ABDB-4CCC-8CC4-58780660FD4D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ibaction</string>
+	<string>dispatchmain</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

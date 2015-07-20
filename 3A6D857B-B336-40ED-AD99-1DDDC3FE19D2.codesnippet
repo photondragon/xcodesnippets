@@ -3,22 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ibaction</string>
+	<string>log1</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (IBAction)&lt;#action#&gt;:(id)sender
-{
-    &lt;#your code#&gt;
-}</string>
+	<string>NSLog(@"&lt;#format#&gt;", &lt;#param#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8B0AD6EB-F902-4B73-A68D-78492C9CF00F</string>
+	<string>3A6D857B-B336-40ED-AD99-1DDDC3FE19D2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ibaction</string>
+	<string>log1</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
