@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dispatchmain</string>
+	<string>documentPath</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_main_queue(), &lt;#^(void)block#&gt;);</string>
+	<string>[NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES) firstObject]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C2E0BB22-ABDB-4CCC-8CC4-58780660FD4D</string>
+	<string>141A411F-80EA-4049-AA2D-064F15C30658</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispatchmain</string>
+	<string>documentPath</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
