@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>methodExchangeInstance</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (void)load
+{
+	static BOOL exchanged = NO;
+	if(exchanged==NO)
+	{
+		exchanged = YES;
+		Method method1 = class_getInstanceMethod(self, @selector(&lt;#method1#&gt;));
+		Method method2 = class_getInstanceMethod(self, @selector(&lt;#method2#&gt;));
+		method_exchangeImplementations(method1, method2);
+	}
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>947B35E2-CDD2-4B85-B5EF-F213B27778FC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Method Exchange (Instance)</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
