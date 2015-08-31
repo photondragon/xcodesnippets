@@ -3,29 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>methodExchangeClass</string>
+	<string>bindDictionary</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (void)load
+	<string>static char bindDictionaryKey = 0;
+
+- (NSMutableDictionary*)bindedDictOf&lt;#ClassName#&gt;
 {
-	static BOOL exchanged = NO;
-	if(exchanged==NO)
+	return objc_getAssociatedObject(self, &amp;bindDictionaryKey);
+}
+- (NSMutableDictionary*)autoBindedDictOf&lt;#ClassName#&gt;
+{
+	NSMutableDictionary* dic = objc_getAssociatedObject(self, &amp;bindDictionaryKey);
+	if(dic==nil)
 	{
-		exchanged = YES;
-        Method oldMethod = class_getClassMethod(self, @selector(&lt;#oldMethod#&gt;));
-        Method newMethod = class_getClassMethod(self, @selector(&lt;#newMethod#&gt;));
-        method_exchangeImplementations(oldMethod, newMethod);
-    }
+		dic = [NSMutableDictionary dictionary];
+		objc_setAssociatedObject(self, &amp;bindDictionaryKey, dic, OBJC_ASSOCIATION_RETAIN);
+	}
+	return dic;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D9B1159A-6C39-4134-97AA-0ED259DB3C5C</string>
+	<string>650EF684-FC92-4F30-B93B-47FEE042530D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Method Exchange (Class)</string>
+	<string>Bind Dictionary</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

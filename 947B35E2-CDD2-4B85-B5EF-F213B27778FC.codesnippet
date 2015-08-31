@@ -15,9 +15,9 @@
 	if(exchanged==NO)
 	{
 		exchanged = YES;
-		Method method1 = class_getInstanceMethod(self, @selector(&lt;#method1#&gt;));
-		Method method2 = class_getInstanceMethod(self, @selector(&lt;#method2#&gt;));
-		method_exchangeImplementations(method1, method2);
+        Method oldMethod = class_getInstanceMethod(self, @selector(&lt;#oldMethod#&gt;));
+        Method newMethod = class_getInstanceMethod(self, @selector(&lt;#newMethod#&gt;));
+		method_exchangeImplementations(oldMethod, newMethod);
 	}
 }</string>
 	<key>IDECodeSnippetIdentifier</key>

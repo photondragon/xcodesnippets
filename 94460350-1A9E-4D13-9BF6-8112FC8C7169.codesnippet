@@ -3,29 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>methodExchangeClass</string>
+	<string>deallocWithLog</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (void)load
+	<string>- (void)dealloc
 {
-	static BOOL exchanged = NO;
-	if(exchanged==NO)
-	{
-		exchanged = YES;
-        Method oldMethod = class_getClassMethod(self, @selector(&lt;#oldMethod#&gt;));
-        Method newMethod = class_getClassMethod(self, @selector(&lt;#newMethod#&gt;));
-        method_exchangeImplementations(oldMethod, newMethod);
-    }
+	NSLog(@"%s", __func__);
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D9B1159A-6C39-4134-97AA-0ED259DB3C5C</string>
+	<string>94460350-1A9E-4D13-9BF6-8112FC8C7169</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Method Exchange (Class)</string>
+	<string>dealloc with Log</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

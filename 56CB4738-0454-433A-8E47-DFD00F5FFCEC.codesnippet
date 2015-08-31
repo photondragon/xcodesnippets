@@ -3,29 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>methodExchangeClass</string>
+	<string>bindObject</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (void)load
+	<string>static char bindObjectKey = 0;
+
+- (id)bindedObjectOf&lt;#ClassName#&gt;
 {
-	static BOOL exchanged = NO;
-	if(exchanged==NO)
-	{
-		exchanged = YES;
-        Method oldMethod = class_getClassMethod(self, @selector(&lt;#oldMethod#&gt;));
-        Method newMethod = class_getClassMethod(self, @selector(&lt;#newMethod#&gt;));
-        method_exchangeImplementations(oldMethod, newMethod);
-    }
+	return objc_getAssociatedObject(self, &amp;bindObjectKey);
+}
+- (void)bindObjectOf&lt;#ClassName#&gt;:(id)obj
+{
+	objc_setAssociatedObject(self, &amp;bindObjectKey, obj, OBJC_ASSOCIATION_RETAIN);
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D9B1159A-6C39-4134-97AA-0ED259DB3C5C</string>
+	<string>56CB4738-0454-433A-8E47-DFD00F5FFCEC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Method Exchange (Class)</string>
+	<string>Bind Object</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
