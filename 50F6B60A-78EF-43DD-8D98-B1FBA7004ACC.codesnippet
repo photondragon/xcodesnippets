@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sandboxPathOfDocument</string>
+	<string>sandboxPathOfTemp</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES)[0]</string>
+	<string>NSTemporaryDirectory()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>141A411F-80EA-4049-AA2D-064F15C30658</string>
+	<string>50F6B60A-78EF-43DD-8D98-B1FBA7004ACC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sandboxPathOfDocument</string>
+	<string>sandboxPathOfTemp</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

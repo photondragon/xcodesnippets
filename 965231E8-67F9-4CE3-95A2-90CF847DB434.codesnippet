@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sandboxPathOfDocument</string>
+	<string>loadNibView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES)[0]</string>
+	<string>UIView* &lt;#view#&gt; = [[NSBundle mainBundle] loadNibNamed:@"&lt;#NibName#&gt;" owner:nil options:nil][0];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>141A411F-80EA-4049-AA2D-064F15C30658</string>
+	<string>965231E8-67F9-4CE3-95A2-90CF847DB434</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sandboxPathOfDocument</string>
+	<string>load view from nib</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
