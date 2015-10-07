@@ -3,27 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tablecell</string>
+	<string>methodExchangeInstance</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+	<string>+ (void)load
 {
-	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"&lt;#reuseIdentifier#&gt;" forIndexPath:indexPath];
-    NSInteger row = indexPath.row;
-	
-    &lt;#your code#&gt;
-    
-	return cell;
+	static BOOL exchanged = NO;
+	if(exchanged==NO)
+	{
+		exchanged = YES;
+        Method oldMethod = class_getInstanceMethod(self, @selector(&lt;#oldMethod#&gt;));
+        Method newMethod = class_getInstanceMethod(self, @selector(&lt;#newMethod#&gt;));
+		method_exchangeImplementations(oldMethod, newMethod);
+	}
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FD072FE8-9EB5-4285-AE27-0856C3EF2F3C</string>
+	<string>947B35E2-CDD2-4B85-B5EF-F213B27778FC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tablecell</string>
+	<string>Method Exchange (Instance)</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

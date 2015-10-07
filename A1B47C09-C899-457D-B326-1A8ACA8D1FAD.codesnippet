@@ -3,27 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tablecell</string>
+	<string>sandboxPathOfLibrary</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"&lt;#reuseIdentifier#&gt;" forIndexPath:indexPath];
-    NSInteger row = indexPath.row;
-	
-    &lt;#your code#&gt;
-    
-	return cell;
-}</string>
+	<string>NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES)[0]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FD072FE8-9EB5-4285-AE27-0856C3EF2F3C</string>
+	<string>A1B47C09-C899-457D-B326-1A8ACA8D1FAD</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tablecell</string>
+	<string>sandboxPathOfLibrary</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

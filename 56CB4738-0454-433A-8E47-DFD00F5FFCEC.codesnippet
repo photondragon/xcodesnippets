@@ -3,27 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tablecell</string>
+	<string>bindObject</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+	<string>static char bindObjectKey = 0;
+
+- (id)bindedObjectOf&lt;#ClassName#&gt;
 {
-	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"&lt;#reuseIdentifier#&gt;" forIndexPath:indexPath];
-    NSInteger row = indexPath.row;
-	
-    &lt;#your code#&gt;
-    
-	return cell;
+	return objc_getAssociatedObject(self, &amp;bindObjectKey);
+}
+- (void)bindObjectOf&lt;#ClassName#&gt;:(id)obj
+{
+	objc_setAssociatedObject(self, &amp;bindObjectKey, obj, OBJC_ASSOCIATION_RETAIN);
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FD072FE8-9EB5-4285-AE27-0856C3EF2F3C</string>
+	<string>56CB4738-0454-433A-8E47-DFD00F5FFCEC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tablecell</string>
+	<string>Bind Object</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

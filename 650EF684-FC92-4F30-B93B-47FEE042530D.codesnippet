@@ -3,27 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tablecell</string>
+	<string>bindDictionary</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+	<string>static char bindDictionaryKey = 0;
+
+- (NSMutableDictionary*)bindedDictOf&lt;#ClassName#&gt;
 {
-	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"&lt;#reuseIdentifier#&gt;" forIndexPath:indexPath];
-    NSInteger row = indexPath.row;
-	
-    &lt;#your code#&gt;
-    
-	return cell;
+	return objc_getAssociatedObject(self, &amp;bindDictionaryKey);
+}
+- (NSMutableDictionary*)autoBindedDictOf&lt;#ClassName#&gt;
+{
+	NSMutableDictionary* dic = objc_getAssociatedObject(self, &amp;bindDictionaryKey);
+	if(dic==nil)
+	{
+		dic = [NSMutableDictionary dictionary];
+		objc_setAssociatedObject(self, &amp;bindDictionaryKey, dic, OBJC_ASSOCIATION_RETAIN);
+	}
+	return dic;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FD072FE8-9EB5-4285-AE27-0856C3EF2F3C</string>
+	<string>650EF684-FC92-4F30-B93B-47FEE042530D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tablecell</string>
+	<string>Bind Dictionary</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
