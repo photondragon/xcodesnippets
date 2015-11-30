@@ -3,31 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sharedInstance</string>
+	<string>inCallback</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)sharedInstance
-{
-	static id sharedInstance;
-	static dispatch_once_t onceToken;
-	dispatch_once(&amp;onceToken, ^{sharedInstance = [self new];});
-	return sharedInstance;
-}
-</string>
+	<string>		if(error)
+		{
+			DDLogError(@"&lt;#...#&gt;失败: %@",error);
+			[SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"&lt;#...#&gt;失败\n%@", error.localizedDescription]];
+		}
+		else
+		{
+			DDLogInfo(@"&lt;#...#&gt;成功");
+		}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2CC3836D-36B6-4885-A0E2-6D2E07572EE8</string>
+	<string>110D469C-4E86-4C11-A1C0-07A77910A788</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>sharedInstance</string>
+	<string>inCallback</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sharedInstance</string>
+	<string>inCallback</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
