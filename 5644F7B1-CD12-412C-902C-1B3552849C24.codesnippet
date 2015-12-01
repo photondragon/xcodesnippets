@@ -3,34 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>inCallback</string>
+	<string>submit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__typeof(self) sself = wself;
-if(error)
+	<string>- (IBAction)submit:(id)sender
 {
-    DDLogError(@"&lt;#...#&gt;失败: %@", error);
-    //[sself prompt:[NSString stringWithFormat:@"&lt;#...#&gt;失败\n%@", error.localizedDescription] duration:2];
+	NSString* errorString = [self checkInputs];
+	if(errorString)
+	{
+		//&lt;#show erro info#&gt;
+		return;
+	}
+	
+	if(_submitting)
+		return;
+	self.submitting = YES;
+    
+	[self prompting:@"&lt;#正在加载#&gt;"];
+	__weak __typeof(self) wself = self;
+	&lt;#submit#&gt;
 }
-else
-{
-    DDLogInfo(@"&lt;#...#&gt;成功");
-    //DDLogVerbose(@"%@", &lt;#...#&gt;);
-    [sself stopPrompt];
-}
-//sself.&lt;#loading#&gt; = NO;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>110D469C-4E86-4C11-A1C0-07A77910A788</string>
+	<string>5644F7B1-CD12-412C-902C-1B3552849C24</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>inCallback</string>
+	<string>submit</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>inCallback</string>
+	<string>submit</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

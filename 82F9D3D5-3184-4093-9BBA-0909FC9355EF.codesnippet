@@ -3,34 +3,35 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>inCallback</string>
+	<string>checkInput</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__typeof(self) sself = wself;
-if(error)
+	<string>// 检测用户输入
+- (NSString*)checkInput&lt;#...#&gt;
 {
-    DDLogError(@"&lt;#...#&gt;失败: %@", error);
-    //[sself prompt:[NSString stringWithFormat:@"&lt;#...#&gt;失败\n%@", error.localizedDescription] duration:2];
+	//&lt;#先校正#&gt;
+	//&lt;#再检测#&gt;
+	if(&lt;#...#&gt;) //用户输入无效
+	{
+		return @"&lt;#错误提示#&gt;";
+	}
+	else
+	{
+		return nil; //检测通过返回nil
+	}
 }
-else
-{
-    DDLogInfo(@"&lt;#...#&gt;成功");
-    //DDLogVerbose(@"%@", &lt;#...#&gt;);
-    [sself stopPrompt];
-}
-//sself.&lt;#loading#&gt; = NO;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>110D469C-4E86-4C11-A1C0-07A77910A788</string>
+	<string>82F9D3D5-3184-4093-9BBA-0909FC9355EF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>inCallback</string>
+	<string>checkInput</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>inCallback</string>
+	<string>checkInput</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,34 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>inCallback</string>
+	<string>observeInput</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__typeof(self) sself = wself;
-if(error)
-{
-    DDLogError(@"&lt;#...#&gt;失败: %@", error);
-    //[sself prompt:[NSString stringWithFormat:@"&lt;#...#&gt;失败\n%@", error.localizedDescription] duration:2];
-}
-else
-{
-    DDLogInfo(@"&lt;#...#&gt;成功");
-    //DDLogVerbose(@"%@", &lt;#...#&gt;);
-    [sself stopPrompt];
-}
-//sself.&lt;#loading#&gt; = NO;
+	<string>[&lt;#_textField#&gt;.rac_textSignal subscribeNext:^(id x) {
+    __typeof(self) sself = wself;
+    [sself checkInputs];
+}];
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>110D469C-4E86-4C11-A1C0-07A77910A788</string>
+	<string>B580081F-70E3-4FDD-9C81-6322EB2320F3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>inCallback</string>
+	<string>observeInput</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>inCallback</string>
+	<string>observeInput</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

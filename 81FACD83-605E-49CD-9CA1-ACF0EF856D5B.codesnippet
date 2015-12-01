@@ -3,34 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>inCallback</string>
+	<string>loadData</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__typeof(self) sself = wself;
-if(error)
-{
-    DDLogError(@"&lt;#...#&gt;失败: %@", error);
-    //[sself prompt:[NSString stringWithFormat:@"&lt;#...#&gt;失败\n%@", error.localizedDescription] duration:2];
+	<string>- (IBAction)&lt;#loadData#&gt;:(id)sender {
+	if(_loading)
+		return;
+	
+	self.loading = YES;
+	[self prompting:@"&lt;#正在加载#&gt;"];
+	__weak __typeof(self) wself = self;
+	&lt;#load data#&gt;
 }
-else
-{
-    DDLogInfo(@"&lt;#...#&gt;成功");
-    //DDLogVerbose(@"%@", &lt;#...#&gt;);
-    [sself stopPrompt];
-}
-//sself.&lt;#loading#&gt; = NO;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>110D469C-4E86-4C11-A1C0-07A77910A788</string>
+	<string>81FACD83-605E-49CD-9CA1-ACF0EF856D5B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>inCallback</string>
+	<string>loadData</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>inCallback</string>
+	<string>loadData</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

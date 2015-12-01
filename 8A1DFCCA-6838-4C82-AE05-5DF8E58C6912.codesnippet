@@ -3,34 +3,41 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>inCallback</string>
+	<string>setInfoEditable</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__typeof(self) sself = wself;
-if(error)
+	<string>- (void)set&lt;#Info#&gt;
 {
-    DDLogError(@"&lt;#...#&gt;失败: %@", error);
-    //[sself prompt:[NSString stringWithFormat:@"&lt;#...#&gt;失败\n%@", error.localizedDescription] duration:2];
+	[self view]; //强制load view
+	
+	_&lt;#info#&gt; = &lt;#info#&gt;;
+	_mod&lt;#info#&gt; = [&lt;#info#&gt; mutableCopy];
+	[self updateShow&lt;#Info#&gt;];
 }
-else
+
+- (void)updateShow&lt;#Info#&gt;
 {
-    DDLogInfo(@"&lt;#...#&gt;成功");
-    //DDLogVerbose(@"%@", &lt;#...#&gt;);
-    [sself stopPrompt];
+	if(_mod&lt;#info#&gt;)
+	{
+		//&lt;#set ui#&gt;
+	}
+	else
+	{
+		//&lt;#clear ui#&gt;
+	}
 }
-//sself.&lt;#loading#&gt; = NO;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>110D469C-4E86-4C11-A1C0-07A77910A788</string>
+	<string>8A1DFCCA-6838-4C82-AE05-5DF8E58C6912</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>inCallback</string>
+	<string>setInfoEditable</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>inCallback</string>
+	<string>setInfoEditable</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
