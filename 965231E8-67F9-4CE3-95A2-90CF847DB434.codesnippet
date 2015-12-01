@@ -14,8 +14,10 @@
 	<string>965231E8-67F9-4CE3-95A2-90CF847DB434</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>loadNibView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>load view from nib</string>
+	<string>loadNibView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -14,8 +14,10 @@
 	<string>C565D42F-D3D1-479E-8557-E7C2AC1451E5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>autoresizeWidthHeight</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>autoresize Width Height</string>
+	<string>autoresizeWidthHeight</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

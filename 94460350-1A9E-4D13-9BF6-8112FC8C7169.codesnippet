@@ -17,8 +17,10 @@
 	<string>94460350-1A9E-4D13-9BF6-8112FC8C7169</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>deallocWithLog</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dealloc with Log</string>
+	<string>deallocWithLog</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

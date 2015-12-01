@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>navbaritem</string>
+	<string>navBarItem</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -14,8 +14,10 @@
 	<string>75C2947D-82C5-4E1D-8431-3898BD4FE5D4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>navBarItem</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Nav Bar Item</string>
+	<string>navBarItem</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

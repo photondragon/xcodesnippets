@@ -9,10 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#_textField#&gt;.rac_textSignal subscribeNext:^(id x) {
-    __typeof(self) sself = wself;
-    [sself checkInputs];
-}];
+	<string>[&lt;#_textField#&gt;.rac_textSignal subscribeNext:^(id x) { [wself checkInputs]; }];
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B580081F-70E3-4FDD-9C81-6322EB2320F3</string>
