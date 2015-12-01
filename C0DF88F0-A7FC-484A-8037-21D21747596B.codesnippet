@@ -3,31 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>inCallback</string>
+	<string>@loading</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        //&lt;#self.loading==NO;#&gt;
-        if(error)
-		{
-			DDLogError(@"&lt;#...#&gt;失败: %@",error);
-			//[SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"&lt;#...#&gt;失败\n%@", error.localizedDescription]];
-		}
-		else
-		{
-			DDLogInfo(@"&lt;#...#&gt;成功");
-            //DDLogVerbose(@"%@",&lt;#...#&gt;);
-		}</string>
+	<string>@property(nonatomic) BOOL loading;
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>110D469C-4E86-4C11-A1C0-07A77910A788</string>
+	<string>C0DF88F0-A7FC-484A-8037-21D21747596B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>inCallback</string>
+	<string>@loading</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>inCallback</string>
+	<string>@loading</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
