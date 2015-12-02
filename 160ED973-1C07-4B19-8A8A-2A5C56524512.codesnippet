@@ -14,8 +14,6 @@
 // 检测用户输入
 - (NSString*)checkInput&lt;#...#&gt;
 {
-	//&lt;#先校正#&gt;
-	//&lt;#再检测#&gt;
 	if(&lt;#...#&gt;) //用户输入无效
 	{
 		return @"&lt;#错误提示#&gt;";
@@ -31,20 +29,18 @@
 {
     NSString* string = _textField&lt;#...#&gt;.text;
     
-    // 先校正
-    if(string.length&gt;&lt;#...#&gt;)
+    if(string.length&lt;&lt;#...#&gt; || string.length&gt;&lt;#...#&gt;) //检测长度
     {
-        string = [string substringWithRange:NSMakeRange(0, &lt;#...#&gt;)]; //校正
-        _textField&lt;#...#&gt;.text = string; //校正
-    }
-    
-    // 再检测
-    if(string.length&lt;&lt;#...#&gt; || string.length&gt;&lt;#...#&gt;) //用户输入无效
-    {
-        if(string.length&gt;0)
+        if(_textField&lt;#...#&gt;.isEditedByUser)
             _textField&lt;#...#&gt;.backgroundColor = [UIColor colorWithRed:1.0 green:0.48 blue:0.51 alpha:1.0];
         return @"&lt;#错误提示#&gt;";
     }
+    //else if([string isNotPureNumeric]) //检测是否包含非法字符
+    //{
+    //    if(_textField.isEditedByUser)
+    //        _textField.backgroundColor = [UIColor colorWithRed:1.0 green:0.48 blue:0.51 alpha:1.0];
+    //    return @"错误提示";
+    //}
     else
     {
         _textField&lt;#...#&gt;.backgroundColor = [UIColor whiteColor];
@@ -52,29 +48,31 @@
     }
 }
 
-// 检测通过返回nil; 检测失败返回错误提示字符串
-- (NSString*)checkInputs
+// 检测通过返回nil; 检测失败返回错误提示字符串的数组
+- (NSArray*)checkInputs
 {
-	NSString* result = nil;
-	
-	result = [self checkInput&lt;#...#&gt;];
-	if(result)
-		goto CHECKEND;
-
-	result = [self checkInput&lt;#...#&gt;];
-	if(result)
-		goto CHECKEND;
-
-CHECKEND:
-    if(result) //检测失败
+    NSMutableArray* errors = [NSMutableArray new];
+    
+    NSString* errstr = nil;
+    
+    errstr = [self checkInput&lt;#...#&gt;];
+    if(errstr.length)
+        [errors addObject:errstr];
+    
+    errstr = [self checkInput&lt;#...#&gt;];
+    if(errstr.length)
+        [errors addObject:errstr];
+    
+    if(errors.count) //检测失败
     {
         //&lt;#_btnSubmit.enabled = NO;#&gt;
+        return errors;
     }
     else //检测通过
     {
         //&lt;#_btnSubmit.enabled = YES;#&gt;
+        return nil;
     }
-    return result;
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>

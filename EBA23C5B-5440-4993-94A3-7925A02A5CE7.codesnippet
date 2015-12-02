@@ -3,43 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>submit</string>
+	<string>observeInput</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (IBAction)submit:(id)sender
-{
-    [self.view endEditing:YES];
-
-    NSArray* errstrs = [self checkInputs];
-	if(errstrs)
-	{
-		//&lt;#show erro info#&gt;
-		return;
-	}
-	
-	if(_submitting)
-		return;
-	self.submitting = YES;
-    
-	[self prompting:@"&lt;#正在加载#&gt;"];
-	__weak __typeof(self) wself = self;
-	&lt;#submit#&gt;
-}
-</string>
+	<string>&lt;#_textField#&gt;.textChangedByUserBlock = ^() { [wself checkInputs]; };</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5644F7B1-CD12-412C-902C-1B3552849C24</string>
+	<string>EBA23C5B-5440-4993-94A3-7925A02A5CE7</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>submit</string>
+	<string>observeInput</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>submit</string>
+	<string>observeInput</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

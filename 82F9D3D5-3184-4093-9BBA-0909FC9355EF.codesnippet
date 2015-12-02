@@ -12,8 +12,6 @@
 	<string>// 检测用户输入
 - (NSString*)checkInput&lt;#...#&gt;
 {
-	//&lt;#先校正#&gt;
-	//&lt;#再检测#&gt;
 	if(&lt;#...#&gt;) //用户输入无效
 	{
 		return @"&lt;#错误提示#&gt;";
