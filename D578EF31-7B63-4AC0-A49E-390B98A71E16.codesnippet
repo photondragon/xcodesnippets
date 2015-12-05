@@ -3,26 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tabledidselectrow</string>
+	<string>viewDidDisappear</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+	<string>- (void)viewDidDisappear:(BOOL)animated
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
-    NSInteger row = indexPath.row;
-
-    &lt;#your code#&gt;
-}</string>
+	&lt;#...#&gt;
+	
+	[super viewDidDisappear:animated];
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8B636D82-6169-4C4C-9D25-D98803E2900D</string>
+	<string>D578EF31-7B63-4AC0-A49E-390B98A71E16</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>viewDidDisappear</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tabledidselectrow</string>
+	<string>viewDidDisappear</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

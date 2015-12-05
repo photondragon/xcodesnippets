@@ -6,10 +6,10 @@
 	<string>loadNibView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIView* &lt;#view#&gt; = [[NSBundle mainBundle] loadNibNamed:@"&lt;#NibName#&gt;" owner:nil options:nil][0];</string>
+	<string>UIView* &lt;#view#&gt; = [[[NSBundle mainBundle] loadNibNamed:@"&lt;#NibName#&gt;" owner:nil options:nil] firstObject];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>965231E8-67F9-4CE3-95A2-90CF847DB434</string>
 	<key>IDECodeSnippetLanguage</key>

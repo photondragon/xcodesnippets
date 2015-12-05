@@ -12,6 +12,16 @@
 	<string>- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"&lt;#reuseIdentifier#&gt;" forIndexPath:indexPath];
+    
+    //// 让分隔线顶到头
+    //if([cell respondsToSelector:@selector(setLayoutMargins:)])
+    //{	// ios8加入的方法
+    //	cell.preservesSuperviewLayoutMargins = NO;
+    //	cell.layoutMargins = UIEdgeInsetsZero;
+    //}
+    //if([cell respondsToSelector:@selector(setSeparatorInset:)])
+    //	cell.separatorInset = UIEdgeInsetsZero;
+
     NSInteger row = indexPath.row;
 	
     &lt;#your code#&gt;

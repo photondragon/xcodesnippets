@@ -3,26 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tabledidselectrow</string>
+	<string>tableHeight</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+	<string>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
-    NSInteger row = indexPath.row;
-
-    &lt;#your code#&gt;
-}</string>
+	return &lt;#height#&gt;;
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8B636D82-6169-4C4C-9D25-D98803E2900D</string>
+	<string>7E8E656F-4A0C-4049-A56D-57840EE3DDCC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>tableHeight</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tabledidselectrow</string>
+	<string>tableHeight</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

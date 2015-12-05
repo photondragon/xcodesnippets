@@ -3,26 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tabledidselectrow</string>
+	<string>@button</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
-    NSInteger row = indexPath.row;
-
-    &lt;#your code#&gt;
-}</string>
+	<string>@property(nonatomic,strong) UIButton* btn&lt;#...#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8B636D82-6169-4C4C-9D25-D98803E2900D</string>
+	<string>94338ABD-CA96-4D8F-9F28-727DC3D0CBE5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>@button</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tabledidselectrow</string>
+	<string>@button</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

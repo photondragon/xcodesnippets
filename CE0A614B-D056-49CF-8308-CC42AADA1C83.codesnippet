@@ -3,26 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tabledidselectrow</string>
+	<string>didMoveToWindow</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+	<string>- (void)didMoveToWindow
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
-    NSInteger row = indexPath.row;
-
-    &lt;#your code#&gt;
-}</string>
+	[super didMoveToWindow];
+	
+	if(self.window) // 显示
+	{
+		&lt;#...#&gt;
+	}
+	else
+	{
+		&lt;#...#&gt;
+	}
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8B636D82-6169-4C4C-9D25-D98803E2900D</string>
+	<string>CE0A614B-D056-49CF-8308-CC42AADA1C83</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>didMoveToWindow</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tabledidselectrow</string>
+	<string>didMoveToWindow</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
