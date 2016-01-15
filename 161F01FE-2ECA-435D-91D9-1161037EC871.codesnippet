@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@mutableDictionary</string>
+	<string>colorwithrgba</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic,strong) NSMutableDictionary* &lt;#dictionary#&gt;;</string>
+	<string>[UIColor colorWithR:&lt;#(UInt8)#&gt; g:&lt;#(UInt8)#&gt; b:&lt;#(UInt8)#&gt; a:&lt;#(UInt8)#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D997DC8B-4E66-4429-AA2C-072F48091BE3</string>
+	<string>161F01FE-2ECA-435D-91D9-1161037EC871</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>@mutableDictionary</string>
+	<string>colorwithrgba</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@mutableDictionary</string>
+	<string>colorwithrgba</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@mutableDictionary</string>
+	<string>appBundleIdentifier</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(nonatomic,strong) NSMutableDictionary* &lt;#dictionary#&gt;;</string>
+	<string>[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D997DC8B-4E66-4429-AA2C-072F48091BE3</string>
+	<string>3E89EA55-06A3-4116-84CC-1A1E4CA4A81E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>@mutableDictionary</string>
+	<string>appBundleIdentifier</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@mutableDictionary</string>
+	<string>appBundleIdentifier</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
