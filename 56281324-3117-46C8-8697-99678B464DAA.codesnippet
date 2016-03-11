@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>iosversion</string>
+	<string>ios8orlater</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[UIDevice currentDevice] systemVersion]</string>
+	<string>[[[UIDevice currentDevice] systemVersion] doubleValue] &gt;= 8.0</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>79BAB1C2-E8D9-4E4C-A1AF-EC0AB9B82C0F</string>
+	<string>56281324-3117-46C8-8697-99678B464DAA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>iosversion</string>
+	<string>ios8orlater</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>iosversion</string>
+	<string>ios8orlater</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
