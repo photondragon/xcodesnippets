@@ -3,29 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>performSelectorNoWarning</string>
+	<string>prefersStatusBarHidden</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>IMP imp = [&lt;#target#&gt; methodForSelector:&lt;#selector#&gt;];
-if(imp==0)
-    return;
-void (*func)(id, SEL, id) = (void *)imp;
-func(&lt;#target#&gt;, &lt;#selector#&gt;, &lt;#object#&gt;);
+	<string>- (BOOL)prefersStatusBarHidden
+{
+	return NO;
+}
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2A61C06F-F9FC-4492-9FE4-B2CFFBF56BF6</string>
+	<string>2412B2A6-21A5-4410-AC7A-463E9846B08D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>performSelectorNoWarning</string>
+	<string>prefersStatusBarHidden</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>performSelectorNoWarning</string>
+	<string>prefersStatusBarHidden</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
